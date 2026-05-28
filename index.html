@@ -1,0 +1,1591 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet" />
+    <meta name="googlebot" content="noindex, nofollow" />
+    <title>Roundlab Taiwan 旗艦店開幕 × 一日店長｜公關提案需求書 v1.5</title>
+    <style>
+      :root {
+        --bg-base: #ffffff;
+        --bg-elev-1: #f7f9fc;
+        --bg-elev-2: #eff2f8;
+        --bg-elev-3: #e5e9f2;
+        --border-soft: #e4e8f0;
+        --border-line: #c5cdd9;
+        --text-primary: #0e1a35;
+        --text-secondary: #4a5570;
+        --text-tertiary: #7682a0;
+        --text-muted: #a0aabe;
+        --accent: #2d7fb8;
+        --accent-strong: #1f5e8c;
+        --accent-soft: rgba(45, 127, 184, 0.08);
+        --accent-line: rgba(45, 127, 184, 0.28);
+        --highlight: #c99a2d;
+        --highlight-soft: rgba(201, 154, 45, 0.08);
+        --radius-sm: 6px;
+        --radius-md: 10px;
+        --radius-lg: 16px;
+        --shadow-card: 0 2px 12px rgba(14, 26, 53, 0.04);
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html,
+      body {
+        background: var(--bg-base);
+        color: var(--text-primary);
+        font-family:
+          "Inter",
+          "Noto Sans TC",
+          "PingFang TC",
+          "Microsoft JhengHei",
+          -apple-system,
+          BlinkMacSystemFont,
+          sans-serif;
+        font-size: 15px;
+        line-height: 1.65;
+        letter-spacing: 0.01em;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      ::selection {
+        background: var(--accent);
+        color: #fff;
+      }
+
+      /* Nav */
+      .deck-nav {
+        position: fixed;
+        top: 50%;
+        right: 24px;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        z-index: 100;
+        padding: 14px 8px;
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(10px);
+        border: 1px solid var(--border-soft);
+        border-radius: 30px;
+        box-shadow: var(--shadow-card);
+      }
+      .deck-nav a {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: var(--border-line);
+        transition: all 0.25s ease;
+        display: block;
+      }
+      .deck-nav a:hover,
+      .deck-nav a.active {
+        background: var(--accent);
+        transform: scale(1.4);
+      }
+
+      /* Page Layout */
+      .page {
+        min-height: 100vh;
+        width: 100%;
+        padding: 64px 80px 56px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid var(--border-soft);
+        page-break-after: always;
+        break-after: page;
+      }
+
+      .page-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+        padding-bottom: 18px;
+        border-bottom: 1px solid var(--border-soft);
+      }
+      .page-marker {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        font-size: 12px;
+        letter-spacing: 0.12em;
+        color: var(--text-tertiary);
+        font-weight: 500;
+      }
+      .page-marker .dot {
+        width: 6px;
+        height: 6px;
+        background: var(--accent);
+        border-radius: 50%;
+      }
+      .page-num {
+        font-family:
+          "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+        font-size: 13px;
+        color: var(--text-tertiary);
+        letter-spacing: 0.08em;
+      }
+      .page-num em {
+        font-style: normal;
+        color: var(--accent);
+      }
+
+      .page-title {
+        font-size: 38px;
+        font-weight: 700;
+        letter-spacing: -0.01em;
+        line-height: 1.2;
+        margin-bottom: 12px;
+        color: var(--text-primary);
+      }
+      .page-subtitle {
+        font-size: 16px;
+        color: var(--text-secondary);
+        font-weight: 400;
+        max-width: 760px;
+      }
+
+      .page-body {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+      }
+
+      .page-footer {
+        margin-top: 32px;
+        padding-top: 18px;
+        border-top: 1px solid var(--border-soft);
+        display: flex;
+        justify-content: space-between;
+        font-size: 11px;
+        letter-spacing: 0.1em;
+        color: var(--text-muted);
+      }
+
+      /* Cover */
+      .page-cover {
+        min-height: 100vh;
+        background:
+          radial-gradient(
+            circle at 15% 20%,
+            rgba(45, 127, 184, 0.1) 0%,
+            transparent 45%
+          ),
+          radial-gradient(
+            circle at 85% 80%,
+            rgba(45, 127, 184, 0.06) 0%,
+            transparent 50%
+          ),
+          linear-gradient(180deg, #ffffff 0%, #fafbfe 100%);
+        padding: 56px 80px;
+        justify-content: space-between;
+      }
+      .cover-top {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+      .cover-brand {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .cover-brand .brand-logo {
+        height: 36px;
+        width: auto;
+        display: block;
+      }
+      .cover-brand .market {
+        font-size: 11px;
+        letter-spacing: 0.24em;
+        color: var(--text-tertiary);
+      }
+
+      .cover-center {
+        max-width: 980px;
+      }
+      .cover-eyebrow {
+        font-size: 14px;
+        letter-spacing: 0.2em;
+        color: var(--accent);
+        margin-bottom: 28px;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        font-weight: 600;
+      }
+      .cover-eyebrow::before {
+        content: "";
+        width: 40px;
+        height: 1px;
+        background: var(--accent);
+      }
+      .cover-title {
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 1.15;
+        letter-spacing: -0.01em;
+        margin-bottom: 24px;
+        color: var(--text-primary);
+      }
+      .cover-title .accent {
+        color: var(--accent);
+        font-weight: 700;
+      }
+      .cover-subtitle {
+        font-size: 18px;
+        color: var(--text-secondary);
+        font-weight: 400;
+        max-width: 760px;
+        line-height: 1.65;
+      }
+      .cover-meta {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+        padding-top: 36px;
+        border-top: 1px solid var(--border-soft);
+      }
+      .cover-meta dt {
+        font-size: 11px;
+        letter-spacing: 0.16em;
+        color: var(--text-tertiary);
+        margin-bottom: 6px;
+        font-weight: 500;
+      }
+      .cover-meta dd {
+        font-size: 15px;
+        color: var(--text-primary);
+        font-weight: 600;
+      }
+
+      /* Grids */
+      .grid-3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+      .grid-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+      }
+      .grid-4 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+      }
+
+      .card {
+        background: var(--bg-elev-1);
+        border: 1px solid var(--border-soft);
+        border-radius: var(--radius-md);
+        padding: 26px 24px;
+        position: relative;
+        box-shadow: var(--shadow-card);
+      }
+      .card-eyebrow {
+        font-size: 11px;
+        letter-spacing: 0.16em;
+        color: var(--accent);
+        margin-bottom: 12px;
+        font-weight: 600;
+      }
+      .card-title {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        letter-spacing: -0.005em;
+        color: var(--text-primary);
+      }
+      .card-body {
+        font-size: 14px;
+        color: var(--text-secondary);
+        line-height: 1.7;
+      }
+      .card-body strong {
+        color: var(--text-primary);
+        font-weight: 600;
+      }
+      .card-body em {
+        color: var(--accent-strong);
+        font-style: normal;
+        font-weight: 600;
+      }
+
+      .stat-card {
+        background: var(--bg-elev-1);
+        border: 1px solid var(--border-soft);
+        border-radius: var(--radius-md);
+        padding: 24px 22px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 140px;
+        box-shadow: var(--shadow-card);
+      }
+      .stat-card .label {
+        font-size: 12px;
+        letter-spacing: 0.14em;
+        color: var(--text-tertiary);
+        margin-bottom: 12px;
+        font-weight: 500;
+      }
+      .stat-card .value {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 1.2;
+        letter-spacing: -0.015em;
+        color: var(--text-primary);
+      }
+      .stat-card .value .unit {
+        font-size: 14px;
+        color: var(--text-tertiary);
+        font-weight: 500;
+        margin-left: 4px;
+      }
+      .stat-card .desc {
+        font-size: 12px;
+        color: var(--text-tertiary);
+        margin-top: 8px;
+        line-height: 1.6;
+      }
+
+      .callout {
+        background: var(--accent-soft);
+        border: 1px solid var(--accent-line);
+        border-left: 3px solid var(--accent);
+        border-radius: var(--radius-md);
+        padding: 18px 22px;
+        font-size: 14px;
+        color: var(--text-secondary);
+        line-height: 1.7;
+      }
+      .callout strong {
+        color: var(--accent-strong);
+        font-weight: 600;
+      }
+
+      .callout-key {
+        background: var(--highlight-soft);
+        border: 1px solid rgba(201, 154, 45, 0.3);
+        border-left: 3px solid var(--highlight);
+        border-radius: var(--radius-md);
+        padding: 18px 22px;
+        font-size: 14px;
+        color: var(--text-secondary);
+        line-height: 1.7;
+      }
+      .callout-key strong {
+        color: var(--highlight);
+        font-weight: 700;
+      }
+      .callout-key em {
+        color: var(--text-primary);
+        font-style: normal;
+        font-weight: 600;
+      }
+
+      /* Tables */
+      .table-wrap {
+        background: var(--bg-elev-1);
+        border: 1px solid var(--border-soft);
+        border-radius: var(--radius-md);
+        overflow: hidden;
+        box-shadow: var(--shadow-card);
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 14px;
+      }
+      th {
+        text-align: left;
+        padding: 14px 18px;
+        background: var(--bg-elev-2);
+        color: var(--text-tertiary);
+        font-weight: 600;
+        font-size: 12px;
+        letter-spacing: 0.12em;
+        border-bottom: 1px solid var(--border-soft);
+      }
+      td {
+        padding: 14px 18px;
+        border-bottom: 1px solid var(--border-soft);
+        color: var(--text-secondary);
+        vertical-align: top;
+      }
+      tbody tr:last-child td {
+        border-bottom: none;
+      }
+      tbody tr:hover td {
+        background: var(--bg-elev-2);
+      }
+      td strong {
+        color: var(--text-primary);
+        font-weight: 600;
+      }
+      td .accent {
+        color: var(--accent-strong);
+        font-weight: 600;
+      }
+      td.num {
+        font-family:
+          "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+        color: var(--accent-strong);
+        font-weight: 600;
+      }
+
+      /* Tier Cards */
+      .tier {
+        background: var(--bg-elev-1);
+        border: 1px solid var(--border-soft);
+        border-radius: var(--radius-md);
+        padding: 28px 26px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        position: relative;
+        overflow: hidden;
+        box-shadow: var(--shadow-card);
+      }
+      .tier::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: var(--accent);
+        opacity: 0.7;
+      }
+
+      .tier-label {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .tier-num {
+        font-family: "JetBrains Mono", ui-monospace, monospace;
+        font-size: 12px;
+        color: var(--accent);
+        letter-spacing: 0.12em;
+        font-weight: 700;
+      }
+      .tier-tag {
+        font-size: 11px;
+        letter-spacing: 0.12em;
+        color: var(--text-tertiary);
+        padding: 3px 10px;
+        border: 1px solid var(--border-line);
+        border-radius: 999px;
+        font-weight: 500;
+      }
+      .tier-name {
+        font-size: 26px;
+        font-weight: 700;
+        letter-spacing: -0.01em;
+        color: var(--text-primary);
+      }
+      .tier-role {
+        font-size: 13px;
+        color: var(--accent-strong);
+        font-weight: 600;
+        margin-top: -8px;
+      }
+      .tier-desc {
+        font-size: 13px;
+        color: var(--text-secondary);
+        line-height: 1.7;
+        padding-top: 12px;
+        border-top: 1px solid var(--border-soft);
+      }
+      .tier-meta {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        padding-top: 14px;
+        border-top: 1px solid var(--border-soft);
+        font-size: 12px;
+      }
+      .tier-meta .row {
+        display: flex;
+        justify-content: space-between;
+      }
+      .tier-meta .row .k {
+        color: var(--text-tertiary);
+      }
+      .tier-meta .row .v {
+        color: var(--text-primary);
+        font-weight: 500;
+      }
+
+      .nda-mask {
+        position: relative;
+        background: linear-gradient(
+          135deg,
+          var(--bg-elev-2) 0%,
+          var(--bg-elev-3) 100%
+        );
+        border: 1px dashed var(--accent-line);
+        border-radius: var(--radius-sm);
+        padding: 14px 16px;
+        font-size: 12px;
+        color: var(--accent-strong);
+        letter-spacing: 0.04em;
+        margin-top: 4px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 600;
+      }
+      .nda-mask::before {
+        content: "🔒";
+        font-size: 14px;
+        filter: grayscale(1) opacity(0.6);
+      }
+
+      /* Lists */
+      .check-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .check-list li {
+        padding-left: 22px;
+        position: relative;
+        font-size: 14px;
+        color: var(--text-secondary);
+        line-height: 1.65;
+      }
+      .check-list li::before {
+        content: "";
+        position: absolute;
+        left: 4px;
+        top: 10px;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: var(--accent);
+      }
+      .check-list li strong {
+        color: var(--text-primary);
+      }
+
+      .num-list {
+        list-style: none;
+        counter-reset: nlist;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+      }
+      .num-list li {
+        counter-increment: nlist;
+        padding-left: 36px;
+        position: relative;
+        font-size: 14px;
+        color: var(--text-secondary);
+        line-height: 1.7;
+      }
+      .num-list li::before {
+        content: counter(nlist, decimal-leading-zero);
+        position: absolute;
+        left: 0;
+        top: 1px;
+        font-family: "JetBrains Mono", ui-monospace, monospace;
+        font-size: 12px;
+        color: var(--accent);
+        font-weight: 700;
+        letter-spacing: 0.05em;
+      }
+      .num-list li strong {
+        color: var(--text-primary);
+        font-weight: 600;
+        display: block;
+        margin-bottom: 4px;
+        font-size: 14px;
+      }
+
+      /* SOW */
+      .sow-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+      }
+      .sow-block {
+        background: var(--bg-elev-1);
+        border: 1px solid var(--border-soft);
+        border-radius: var(--radius-md);
+        padding: 22px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        box-shadow: var(--shadow-card);
+      }
+      .sow-block .sow-num {
+        font-family: "JetBrains Mono", ui-monospace, monospace;
+        font-size: 11px;
+        color: var(--accent);
+        letter-spacing: 0.12em;
+        font-weight: 700;
+      }
+      .sow-block .sow-title {
+        font-size: 17px;
+        font-weight: 600;
+        color: var(--text-primary);
+      }
+      .sow-block .sow-items {
+        font-size: 13px;
+        color: var(--text-secondary);
+        line-height: 1.65;
+        list-style: none;
+      }
+      .sow-block .sow-items li {
+        padding-left: 14px;
+        position: relative;
+        margin-bottom: 4px;
+      }
+      .sow-block .sow-items li::before {
+        content: "—";
+        position: absolute;
+        left: 0;
+        color: var(--accent);
+        opacity: 0.7;
+      }
+
+      /* Two Col */
+      .two-col {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 28px;
+      }
+      .col-block {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+      .col-block .col-title {
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--text-primary);
+        padding-bottom: 12px;
+        border-bottom: 1px solid var(--border-soft);
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .col-block .col-title .col-tag {
+        font-size: 11px;
+        padding: 3px 10px;
+        background: var(--accent-soft);
+        color: var(--accent-strong);
+        border-radius: 999px;
+        letter-spacing: 0.08em;
+        font-weight: 600;
+      }
+
+      .sub-section-title {
+        font-size: 13px;
+        color: var(--text-tertiary);
+        letter-spacing: 0.1em;
+        margin-bottom: 10px;
+        margin-top: 8px;
+        font-weight: 600;
+      }
+
+      /* Print */
+      @page {
+        size: A4 landscape;
+        margin: 0;
+      }
+      @media print {
+        .deck-nav {
+          display: none;
+        }
+        .page {
+          min-height: 100vh;
+          page-break-after: always;
+        }
+      }
+
+      @media (max-width: 1100px) {
+        .page {
+          padding: 48px 40px;
+        }
+        .cover-title {
+          font-size: 46px;
+        }
+        .grid-3,
+        .sow-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+        .grid-4 {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .two-col,
+        .grid-2 {
+          grid-template-columns: 1fr;
+        }
+        .cover-meta {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="deck-nav" aria-label="頁面導覽">
+      <a href="#p1" title="封面"></a>
+      <a href="#p2" title="品牌脈絡"></a>
+      <a href="#p3" title="活動速覽"></a>
+      <a href="#p4" title="邀請對象結構"></a>
+      <a href="#p5" title="受眾邀請"></a>
+      <a href="#p6" title="活動形式"></a>
+      <a href="#p7" title="委辦範圍與結案"></a>
+      <a href="#p8" title="預算與評選"></a>
+      <a href="#p9" title="時程與聯絡"></a>
+    </nav>
+
+    <main>
+      <!-- P1 封面 -->
+      <section class="page page-cover" id="p1">
+        <div class="cover-top">
+          <div class="cover-brand">
+            <img class="brand-logo" src="roundlab-logo.png" alt="Roundlab" />
+            <div class="market">台灣市場 · 2026</div>
+          </div>
+        </div>
+
+        <div class="cover-center">
+          <div class="cover-eyebrow">旗艦店開幕 × 一日店長記者會</div>
+          <h1 class="cover-title">
+            台北旗艦店開幕<br />
+            <span class="accent">一日店長記者會</span><br />
+            公關提案需求書
+          </h1>
+          <p class="cover-subtitle">
+            Roundlab Taiwan 旗艦店開幕公關活動需求書 ──
+            提供代理商作為提案參考的整體方向與基本條件。
+          </p>
+        </div>
+
+        <dl class="cover-meta">
+          <div>
+            <dt>預計檔期</dt>
+            <dd>2026 年 8–10 月 · 週末</dd>
+          </div>
+          <div>
+            <dt>活動地點</dt>
+            <dd>台北 · 中山區</dd>
+          </div>
+          <div>
+            <dt>活動規模</dt>
+            <dd>20–50 人</dd>
+          </div>
+          <div>
+            <dt>總預算(全包)</dt>
+            <dd>新台幣 30–40 萬</dd>
+          </div>
+        </dl>
+      </section>
+
+      <!-- P2 品牌脈絡 -->
+      <section class="page" id="p2">
+        <header class="page-header">
+          <div class="page-marker"><span class="dot"></span>品牌脈絡</div>
+          <div class="page-num">P · <em>02</em> / 09</div>
+        </header>
+
+        <h2 class="page-title">品牌脈絡與戰略意義</h2>
+        <p class="page-subtitle">
+          品牌定位、台灣市場戰略,以及本次活動主軸的選擇邏輯。
+        </p>
+
+        <div class="page-body">
+          <div class="grid-3">
+            <div class="card">
+              <div class="card-eyebrow">01 · 品牌定位</div>
+              <h3 class="card-title">天然成分為主</h3>
+              <p class="card-body">
+                以 <em>天然成分</em> 為主軸。明星商品與主推系列包含
+                <strong>1025 獨島系列</strong
+                >(獨島深海水)、<strong>白樺樹系列</strong>(白樺樹液)、<strong
+                  >山茶花系列</strong
+                >
+                等,以 <strong>溫和、敏感肌友善</strong> 為品牌定調。受眾為
+                <strong>20–40 歲注重成分</strong> 的女性。
+              </p>
+            </div>
+
+            <div class="card">
+              <div class="card-eyebrow">02 · 台灣戰略意義</div>
+              <h3 class="card-title">線上發展後的實體第一步</h3>
+              <p class="card-body">
+                Roundlab 從線上通路開始耕耘台灣市場,旗艦店是品牌的
+                <em>實體第一步</em>。希望這場活動同時做到三件事:讓媒體認識
+                Roundlab、累積長期可用的 KOL / KOC
+                內容素材、把線上客人引導到實體店體驗。
+              </p>
+            </div>
+
+            <div class="card">
+              <div class="card-eyebrow">03 · 活動主軸</div>
+              <h3 class="card-title">一日店長記者會</h3>
+              <p class="card-body">
+                本次活動定位為「一日店長」型態的開幕記者會。由代言人擔任當日核心角色,整合
+                <strong>媒體採訪</strong>、<strong>店鋪導覽</strong>、<strong
+                  >社群內容產出</strong
+                >
+                於單一場次,以更具效率的方式同步達成多項傳播目標。
+              </p>
+            </div>
+          </div>
+
+          <div class="callout">
+            <strong>整體尺度說明 ──</strong>
+            希望這場活動所累積的素材,能成為品牌未來 6–12
+            個月的內容基礎,而不只是一次性曝光。代理商提案時若能納入此延伸性思考,加分。
+          </div>
+        </div>
+
+        <footer class="page-footer">
+          <span>Roundlab Taiwan · 旗艦店開幕公關提案需求書</span>
+          <span>02 / 品牌脈絡</span>
+        </footer>
+      </section>
+
+      <!-- P3 活動速覽 -->
+      <section class="page" id="p3">
+        <header class="page-header">
+          <div class="page-marker"><span class="dot"></span>活動速覽</div>
+          <div class="page-num">P · <em>03</em> / 09</div>
+        </header>
+
+        <h2 class="page-title">活動速覽</h2>
+        <p class="page-subtitle">六項基本參數,30 秒掌握全貌。</p>
+
+        <div class="page-body">
+          <div class="grid-3">
+            <div class="stat-card">
+              <div class="label">預計檔期</div>
+              <div>
+                <div class="value">
+                  8<span class="unit">—</span>10<span class="unit"
+                    >月 · 週末</span
+                  >
+                </div>
+                <div class="desc">2026 年 Q3,依工程與代言人檔期</div>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="label">活動地點</div>
+              <div>
+                <div class="value">台北 · 中山區</div>
+                <div class="desc">約 30 坪實體旗艦店(地址簽 NDA 後揭露)</div>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="label">活動時長</div>
+              <div>
+                <div class="value">2<span class="unit">小時內</span></div>
+                <div class="desc">建議週六 / 日 下午 14:00–16:00</div>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="label">活動規模</div>
+              <div>
+                <div class="value">20—50<span class="unit">人</span></div>
+                <div class="desc">媒體 + KOL + KOC + 品牌方</div>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="label">總預算(全包)</div>
+              <div>
+                <div class="value">NT$ 30—40<span class="unit">萬</span></div>
+                <div class="desc">含稅一次性總包,涵蓋全部執行費用</div>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="label">活動屬性</div>
+              <div>
+                <div class="value">半開放<br />體驗式</div>
+                <div class="desc">記者會 × 一日店長 × 店鋪導覽</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="callout">
+            <strong>檔期彈性 ──</strong>
+            代言人檔期將是最終定案的關鍵變數。建議代理商以
+            <strong>8–10 月週末</strong> 為前提評估,並附上籌備期 4
+            週的可行性說明。
+          </div>
+        </div>
+
+        <footer class="page-footer">
+          <span>Roundlab Taiwan · 旗艦店開幕公關提案需求書</span>
+          <span>03 / 活動速覽</span>
+        </footer>
+      </section>
+
+      <!-- P4 邀請對象結構 -->
+      <section class="page" id="p4">
+        <header class="page-header">
+          <div class="page-marker"><span class="dot"></span>邀請對象結構</div>
+          <div class="page-num">P · <em>04</em> / 09</div>
+        </header>
+
+        <h2 class="page-title">一日店長 · 邀請對象結構</h2>
+        <p class="page-subtitle">
+          活動由代言人、KOL、KOC 三個層次共構,各自承擔不同的內容任務。
+        </p>
+
+        <div class="page-body">
+          <div class="grid-3">
+            <div class="tier">
+              <div class="tier-label">
+                <span class="tier-num">層級 · 01</span>
+                <span class="tier-tag">活動主角</span>
+              </div>
+              <div class="tier-name">代言人</div>
+              <div class="tier-role">活動主角 · 媒體焦點</div>
+              <div class="tier-desc">
+                擔任當日「店長」核心角色 ── 剪綵、店鋪導覽、媒體合影、產品介紹。
+              </div>
+              <div class="nda-mask">已鎖定 · 簽 NDA 後揭露</div>
+              <div class="tier-meta">
+                <div class="row">
+                  <span class="k">出席時長</span
+                  ><span class="v">2 小時(含妝髮)</span>
+                </div>
+                <div class="row">
+                  <span class="k">產出內容</span
+                  ><span class="v">媒體採訪 + 個人社群</span>
+                </div>
+                <div class="row">
+                  <span class="k">由誰負責</span
+                  ><span class="v">品牌方協調</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="tier">
+              <div class="tier-label">
+                <span class="tier-num">層級 · 02</span>
+                <span class="tier-tag">深度內容</span>
+              </div>
+              <div class="tier-name">KOL</div>
+              <div class="tier-role">深度內容創作</div>
+              <div class="tier-desc">
+                由代理商提案具體人選,類型以保養 /
+                成分型為主。出席現場、體驗產品、產出具個人觀點的內容。
+              </div>
+              <div class="tier-meta">
+                <div class="row">
+                  <span class="k">選擇權</span><span class="v">代理商決定</span>
+                </div>
+                <div class="row">
+                  <span class="k">類型範圍</span
+                  ><span class="v">保養 / 成分型</span>
+                </div>
+                <div class="row">
+                  <span class="k">產出規格</span
+                  ><span class="v">主貼文 + Reels + 限動</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="tier">
+              <div class="tier-label">
+                <span class="tier-num">層級 · 03</span>
+                <span class="tier-tag">真實擴散</span>
+              </div>
+              <div class="tier-name">KOC</div>
+              <div class="tier-role">真實擴散與長尾</div>
+              <div class="tier-desc">
+                由代理商邀請粉絲 1萬–5萬 量級的真實創作者。透過
+                <strong>Threads 廣發</strong> 與
+                <strong>IG 限動 / Reels</strong> 雙平台擴散活動體驗。
+              </div>
+              <div class="tier-meta">
+                <div class="row">
+                  <span class="k">選擇權</span><span class="v">代理商決定</span>
+                </div>
+                <div class="row">
+                  <span class="k">粉絲級距</span
+                  ><span class="v">1萬 – 5萬</span>
+                </div>
+                <div class="row">
+                  <span class="k">產出規格</span
+                  ><span class="v">Threads + IG 限動 / Reels</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="callout">
+            代理商在提案階段不需提供具體名單,但希望說明
+            <strong>選擇邏輯與層級配比的考量</strong>。
+          </div>
+        </div>
+
+        <footer class="page-footer">
+          <span>Roundlab Taiwan · 旗艦店開幕公關提案需求書</span>
+          <span>04 / 邀請對象結構</span>
+        </footer>
+      </section>
+
+      <!-- P5 受眾邀請 -->
+      <section class="page" id="p5">
+        <header class="page-header">
+          <div class="page-marker"><span class="dot"></span>受眾邀請策略</div>
+          <div class="page-num">P · <em>05</em> / 09</div>
+        </header>
+
+        <h2 class="page-title">受眾與邀請策略</h2>
+        <p class="page-subtitle">
+          品牌方提供大致方向,具體名單與選擇方法由代理商提案。
+        </p>
+
+        <div class="page-body">
+          <div class="two-col">
+            <div class="col-block">
+              <div class="col-title">
+                媒體邀請方向 <span class="col-tag">方向參考</span>
+              </div>
+              <ul class="check-list">
+                <li>
+                  <strong>美妝專業</strong> · Marie Claire / ELLE / VOGUE /
+                  美人圈 / 女人我最大 / Bella
+                </li>
+                <li>
+                  <strong>時尚生活風格</strong> · GQ / Harper's Bazaar / Popbee
+                  / Polysh
+                </li>
+                <li>
+                  <strong>數位內容</strong> · Dappei / PopDaily / Womany /
+                  Cosmopolitan TW
+                </li>
+                <li>
+                  <strong>綜合新聞</strong> · 聯合報 / 自由時報 / ETtoday /
+                  Yahoo 美妝線
+                </li>
+              </ul>
+              <div class="callout">
+                以上為
+                <strong>方向參考</strong
+                >,代理商可依品牌調性與檔期自行挑選最適合的媒體出席。
+              </div>
+            </div>
+
+            <div class="col-block">
+              <div class="col-title">
+                KOL / KOC 邀請考量 <span class="col-tag">基本條件</span>
+              </div>
+              <ol class="num-list">
+                <li>
+                  <strong>受眾輪廓符合</strong>
+                  最終名單受眾分布:20–40 歲女性 ≥ 60%、台灣受眾 ≥ 80%。
+                </li>
+              </ol>
+
+              <div class="callout-key">
+                <strong>品牌方關鍵堅持 · 內容調性勝於數字 ──</strong><br />
+                我們寧可少幾位 KOL,也希望請到
+                <em>對保養成分有自己觀點、貼文不會範本化業配</em>
+                的創作者。請代理商挑選時把「個人觀點」與「品牌契合度」放在粉絲數之前。
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer class="page-footer">
+          <span>Roundlab Taiwan · 旗艦店開幕公關提案需求書</span>
+          <span>05 / 受眾邀請</span>
+        </footer>
+      </section>
+
+      <!-- P6 活動形式 -->
+      <section class="page" id="p6">
+        <header class="page-header">
+          <div class="page-marker"><span class="dot"></span>活動形式與亮點</div>
+          <div class="page-num">P · <em>06</em> / 09</div>
+        </header>
+
+        <h2 class="page-title">活動形式與亮點</h2>
+        <p class="page-subtitle">必要橋段為基線,加分項保留給代理商創意。</p>
+
+        <div class="page-body">
+          <div class="two-col">
+            <div class="col-block">
+              <div class="col-title">
+                必要橋段 <span class="col-tag">基線</span>
+              </div>
+              <ol class="num-list">
+                <li>
+                  <strong>開幕儀式</strong>
+                  一日店長亮相 / 品牌致詞 ≤ 5 分鐘 / 媒體大合照。
+                </li>
+                <li>
+                  <strong>店鋪導覽</strong>
+                  一日店長主導。分組導覽避免擁擠,含 3 個高度可拍打卡點。
+                </li>
+                <li>
+                  <strong>媒體採訪</strong>
+                  品牌代表 + 一日店長小組訪談;有韓方代表須備中韓口譯。
+                </li>
+                <li>
+                  <strong>KOL / KOC 體驗時段</strong>
+                  獨立體驗區、產品試用、補光配置,保留 30–45 分鐘自由創作。
+                </li>
+              </ol>
+            </div>
+
+            <div class="col-block">
+              <div class="col-title">
+                加分項 <span class="col-tag">代理商創意</span>
+              </div>
+
+              <div class="sub-section-title">▎品牌方期待的互動方向</div>
+              <ul class="check-list">
+                <li><strong>DIY 客製體驗區</strong> · 來賓現場 DIY 互動。</li>
+                <li>
+                  <strong>韓式五步驟肌底儀式體驗</strong> · 專業 BA 帶領 KOL /
+                  KOC 完整走完 Roundlab
+                  韓國保養五步驟,可錄製為品牌長期教學素材。
+                </li>
+              </ul>
+
+              <div class="sub-section-title">▎代理商可自由提案</div>
+              <ul class="check-list">
+                <li>沉浸式體驗裝置 / 限定店內裝置(僅開幕當週)</li>
+                <li>KOL 專屬伴手禮拆封儀式</li>
+                <li>二創素材包(Reels 範本 / AR 濾鏡 / 限定貼圖)</li>
+                <li>後續延伸內容續集(代言人 × 旗艦店)</li>
+              </ul>
+
+              <div class="callout">
+                <strong>執行注意事項 ──</strong> 30
+                坪空間相對緊湊,請於提案附上動線規劃與分流方案。
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer class="page-footer">
+          <span>Roundlab Taiwan · 旗艦店開幕公關提案需求書</span>
+          <span>06 / 活動形式</span>
+        </footer>
+      </section>
+
+      <!-- P7 委辦範圍 + 結案驗收 -->
+      <section class="page" id="p7">
+        <header class="page-header">
+          <div class="page-marker">
+            <span class="dot"></span>委辦範圍 · 結案驗收
+          </div>
+          <div class="page-num">P · <em>07</em> / 09</div>
+        </header>
+
+        <h2 class="page-title">委辦範圍與結案驗收</h2>
+        <p class="page-subtitle">
+          六大範疇全項作業由代理商承接,結案標準附於頁底。
+        </p>
+
+        <div class="page-body">
+          <div class="sow-grid">
+            <div class="sow-block">
+              <span class="sow-num">委辦 · 01</span>
+              <div class="sow-title">企劃與統籌</div>
+              <ul class="sow-items">
+                <li>整體企劃書 / 流程表</li>
+                <li>走位圖 / 應變預案</li>
+                <li>跨部門協調</li>
+                <li>當日現場總指揮</li>
+              </ul>
+            </div>
+
+            <div class="sow-block">
+              <span class="sow-num">委辦 · 02</span>
+              <div class="sow-title">媒體公關</div>
+              <ul class="sow-items">
+                <li>新聞稿撰寫(800–1,200 字)</li>
+                <li>媒體邀請追蹤</li>
+                <li>媒體素材包設計印製</li>
+                <li>露出彙整結案報告</li>
+              </ul>
+            </div>
+
+            <div class="sow-block">
+              <span class="sow-num">委辦 · 03</span>
+              <div class="sow-title">KOL / KOC 統籌</div>
+              <ul class="sow-items">
+                <li>名單提案 / 洽談 / 簽約</li>
+                <li>出席與產出時程管理</li>
+                <li>內容方向 Brief</li>
+                <li>品牌調性溝通</li>
+              </ul>
+            </div>
+
+            <div class="sow-block">
+              <span class="sow-num">委辦 · 04</span>
+              <div class="sow-title">硬體場佈</div>
+              <ul class="sow-items">
+                <li>場佈設計與施作</li>
+                <li>背板 / 桁架 / 花藝</li>
+                <li>影音設備</li>
+                <li>打卡點實體製作</li>
+              </ul>
+            </div>
+
+            <div class="sow-block">
+              <span class="sow-num">委辦 · 05</span>
+              <div class="sow-title">人員配置</div>
+              <ul class="sow-items">
+                <li>專業主持人 × 1</li>
+                <li>攝影 × 1 + 錄影 × 1</li>
+                <li>接待人員 × 2–3</li>
+                <li>妝髮支援(如需)</li>
+              </ul>
+            </div>
+
+            <div class="sow-block">
+              <span class="sow-num">委辦 · 06</span>
+              <div class="sow-title">公關品包裝</div>
+              <ul class="sow-items">
+                <li>媒體公關品設計</li>
+                <li>KOL / KOC 分層差異化</li>
+                <li>未到場媒體寄送</li>
+                <li>物流與簽收追蹤</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="grid-2">
+            <div class="callout">
+              <strong>影像交付 ──</strong>
+              精修照片 ≥ 50 張、活動花絮短影音 ≥ 1 支(60
+              秒內)、社群素材包(品牌方延伸使用 6 個月)。
+            </div>
+            <div class="callout">
+              <strong>結案驗收(活動後 14 個工作日內) ──</strong>
+              媒體出席 ≥ 5 家(期待 10 家)、露出 ≥ 10 則(期待 20 則)、KOL 出席率
+              ≥ 90%、附媒體與 KOL / KOC 內容彙整與簡要建議。
+            </div>
+          </div>
+        </div>
+
+        <footer class="page-footer">
+          <span>Roundlab Taiwan · 旗艦店開幕公關提案需求書</span>
+          <span>07 / 委辦範圍與驗收</span>
+        </footer>
+      </section>
+
+      <!-- P8 預算與評選 -->
+      <section class="page" id="p8">
+        <header class="page-header">
+          <div class="page-marker"><span class="dot"></span>預算與評選</div>
+          <div class="page-num">P · <em>08</em> / 09</div>
+        </header>
+
+        <h2 class="page-title">預算配置與評選權重</h2>
+        <p class="page-subtitle">
+          總預算
+          <strong>新台幣 30–40 萬(含稅,一次性總包)</strong
+          >,涵蓋媒體邀請、KOL/KOC、場地佈置、活動流程規劃、現場人員、影像紀錄、公關品等全部執行費用。<span
+            style="font-size: 13px; color: var(--text-tertiary)"
+            >代言人費用由品牌方另行支付,不佔此預算。</span
+          >
+        </p>
+
+        <div class="page-body">
+          <div class="two-col">
+            <div class="col-block">
+              <div class="col-title">
+                預算項目須拆解 <span class="col-tag">全包預算</span>
+              </div>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th style="width: 50%">項目</th>
+                      <th>備註</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>企劃統籌費</strong></td>
+                      <td>PM 人力、企劃、現場執行</td>
+                    </tr>
+                    <tr>
+                      <td><strong>媒體公關費</strong></td>
+                      <td>新聞稿、邀請、素材包</td>
+                    </tr>
+                    <tr>
+                      <td><strong>KOL / KOC 費用</strong></td>
+                      <td class="accent">須分項列出每位費用</td>
+                    </tr>
+                    <tr>
+                      <td><strong>場地佈置費</strong></td>
+                      <td>設計、施作、拆卸</td>
+                    </tr>
+                    <tr>
+                      <td><strong>活動流程規劃費</strong></td>
+                      <td>內容企劃 / 動線 / 體驗區</td>
+                    </tr>
+                    <tr>
+                      <td><strong>影像紀錄費</strong></td>
+                      <td>攝影、錄影、後製</td>
+                    </tr>
+                    <tr>
+                      <td><strong>現場人員費</strong></td>
+                      <td>主持、接待、其他</td>
+                    </tr>
+                    <tr>
+                      <td><strong>公關品包裝費</strong></td>
+                      <td>設計、包材、寄送</td>
+                    </tr>
+                    <tr>
+                      <td><strong>雜支不可預期</strong></td>
+                      <td>建議預留 5–8%</td>
+                    </tr>
+                    <tr>
+                      <td><strong>代理商服務費</strong></td>
+                      <td class="accent">明列百分比或定額</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="callout">
+                鼓勵代理商提出「<strong>必執行 vs 加值項</strong
+                >」分階段預算,讓品牌方有取捨空間。
+              </div>
+            </div>
+
+            <div class="col-block">
+              <div class="col-title">
+                評選權重 <span class="col-tag">評估標準</span>
+              </div>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>評估項目</th>
+                      <th style="width: 25%">權重</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>策略思考與品牌理解</strong></td>
+                      <td class="num">30%</td>
+                    </tr>
+                    <tr>
+                      <td><strong>KOL / KOC 選擇邏輯</strong></td>
+                      <td class="num">30%</td>
+                    </tr>
+                    <tr>
+                      <td><strong>創意執行與場佈</strong></td>
+                      <td class="num">25%</td>
+                    </tr>
+                    <tr>
+                      <td><strong>預算合理性與透明度</strong></td>
+                      <td class="num">15%</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div style="margin-top: 4px">
+                <div class="sub-section-title">▎提案必備內容</div>
+                <ul class="check-list">
+                  <li>美妝 / 開幕類過往案例 ≥ 3 個</li>
+                  <li>策略思考 ≤ 2 頁 + 完整企劃書</li>
+                  <li>KOL / KOC 初步名單方向 + 費用拆解</li>
+                  <li>專案團隊配置與 PM 資歷</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer class="page-footer">
+          <span>Roundlab Taiwan · 旗艦店開幕公關提案需求書</span>
+          <span>08 / 預算與評選</span>
+        </footer>
+      </section>
+
+      <!-- P9 時程與聯絡 -->
+      <section class="page" id="p9">
+        <header class="page-header">
+          <div class="page-marker">
+            <span class="dot"></span>時程 · 聯絡 · 保密
+          </div>
+          <div class="page-num">P · <em>09</em> / 09</div>
+        </header>
+
+        <h2 class="page-title">時程 / 聯絡 / 保密</h2>
+        <p class="page-subtitle">時程表為佔位版本,品牌方確認後填入具體日期。</p>
+
+        <div class="page-body">
+          <div class="two-col">
+            <div class="col-block">
+              <div class="col-title">
+                提案時程表 <span class="col-tag">時程</span>
+              </div>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>階段</th>
+                      <th>日期</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>需求書發出日</td>
+                      <td class="num">[YYYY / MM / DD]</td>
+                    </tr>
+                    <tr>
+                      <td>提問截止</td>
+                      <td class="num">[YYYY / MM / DD]</td>
+                    </tr>
+                    <tr>
+                      <td>品牌方統一回覆 Q&A</td>
+                      <td class="num">[YYYY / MM / DD]</td>
+                    </tr>
+                    <tr>
+                      <td><strong>提案書繳交截止</strong></td>
+                      <td
+                        class="num"
+                        style="color: var(--accent); font-weight: 700"
+                      >
+                        [YYYY / MM / DD]
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>入圍代理商現場簡報</td>
+                      <td class="num">[YYYY / MM / DD]</td>
+                    </tr>
+                    <tr>
+                      <td>最終代理商公告</td>
+                      <td class="num">[YYYY / MM / DD]</td>
+                    </tr>
+                    <tr>
+                      <td>合約簽訂</td>
+                      <td class="num">[YYYY / MM / DD]</td>
+                    </tr>
+                    <tr>
+                      <td>籌備期啟動</td>
+                      <td class="num">[YYYY / MM / DD]</td>
+                    </tr>
+                    <tr>
+                      <td><strong>活動執行日</strong></td>
+                      <td
+                        class="num"
+                        style="color: var(--accent); font-weight: 700"
+                      >
+                        [YYYY / MM / DD]
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>結案報告繳交</td>
+                      <td>活動後 14 個工作日內</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="col-block">
+              <div class="col-title">
+                聯絡資訊 <span class="col-tag">窗口</span>
+              </div>
+              <div class="table-wrap">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td style="width: 30%"><strong>委託方</strong></td>
+                      <td>Roundlab Taiwan</td>
+                    </tr>
+                    <tr>
+                      <td><strong>專案窗口</strong></td>
+                      <td>[姓名 / 職稱]</td>
+                    </tr>
+                    <tr>
+                      <td><strong>聯絡信箱</strong></td>
+                      <td class="accent">info@mivuebeauty.com</td>
+                    </tr>
+                    <tr>
+                      <td><strong>聯絡電話</strong></td>
+                      <td>[電話]</td>
+                    </tr>
+                    <tr>
+                      <td><strong>繳交方式</strong></td>
+                      <td>Email / 線上空間</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="col-title" style="margin-top: 12px">
+                保密條款 <span class="col-tag">NDA</span>
+              </div>
+              <div class="callout">
+                <strong>收到本需求書即視同同意 ──</strong>
+                不得對外揭露比稿品牌身份與細節 /
+                不得將本需求書轉交非提案相關人員 / 未獲選代理商請於公告後 14
+                日內銷毀相關文件。
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="callout"
+            style="text-align: center; font-size: 15px; padding: 20px"
+          >
+            期待與重視
+            <strong>內容調性與品牌契合度</strong>
+            的代理商合作,共同打造一場合宜、有溫度的開幕事件。
+          </div>
+        </div>
+
+        <footer class="page-footer">
+          <span>Roundlab Taiwan · 旗艦店開幕公關提案需求書 · v1.5</span>
+          <span>完 · 09 / 09</span>
+        </footer>
+      </section>
+    </main>
+
+    <script>
+      const nav = document.querySelectorAll(".deck-nav a");
+      const pages = document.querySelectorAll(".page");
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const id = entry.target.id;
+              nav.forEach((a) => {
+                a.classList.toggle(
+                  "active",
+                  a.getAttribute("href") === "#" + id,
+                );
+              });
+            }
+          });
+        },
+        { threshold: 0.5 },
+      );
+      pages.forEach((p) => observer.observe(p));
+    </script>
+  </body>
+</html>
